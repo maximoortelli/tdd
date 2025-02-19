@@ -8,7 +8,8 @@
     "build": "vite build",
     "dev": "vite",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "lint": "standard"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,12 @@
   "dependencies": {
     "mathjs": "^12.4.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }
